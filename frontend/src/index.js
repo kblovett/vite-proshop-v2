@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom';
 
 import App from './App';
-import { HomeScreen } from './screens';
+import { HomeScreen, ProductScreen } from './screens';
 
 import './assets/styles/bootstrap.custom.css';
 import './assets/styles/index.css';
@@ -19,6 +19,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App />}>
       <Route index={true} path='/' element={<HomeScreen />} />
+      <Route path='/product/:id' element={<ProductScreen />} />
     </Route>
   )
 );
