@@ -14,6 +14,7 @@ const ProductScreen = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       const { data } = await axios.get(`/api/products/${productId}`);
+      console.log(data);
       setProduct(data);
     };
     fetchProducts();
@@ -24,6 +25,7 @@ const ProductScreen = () => {
 
   return (
     <>
+      {product?.message && <h2>{product.message}</h2>}
       <Link className='btn btn-light my-3' to='/'>
         Go Back
       </Link>
