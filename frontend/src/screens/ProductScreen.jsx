@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 import { useGetProductDetailsQuery } from '../slices/productSlice';
-import { Rating } from '../components';
+import { Rating, Loader, Message } from '../components';
 
 import { Row, Col, Image, ListGroup, Card, Button } from 'react-bootstrap';
 
@@ -17,9 +17,9 @@ const ProductScreen = () => {
   } = useGetProductDetailsQuery(productId);
 
   return isLoading ? (
-    <h2>Loading...</h2>
+    <Loader />
   ) : isError ? (
-    <h3>{error?.data?.message || error.error}</h3>
+    <Message variant='danger'>{error?.data?.message || error.error}</Message>
   ) : (
     <>
       {product?.message && <h2>{product.message}</h2>}
