@@ -31,7 +31,7 @@ const ProductScreen = () => {
 
   const addToCartHandler = () => {
     dispatch(addToCart({ ...product, qty }));
-    // navigate('/cart');
+    navigate('/cart');
   };
 
   return isLoading ? (
