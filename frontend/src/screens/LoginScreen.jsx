@@ -1,17 +1,43 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+
+import { setCredentials, useLoginMutation } from '../slices';
 
 import { Form, Button, Row, Col } from 'react-bootstrap';
+import { toast } from 'react-toastify';
 
-import { FormContainer } from '../components';
+import { FormContainer, Loader } from '../components';
 
 const LoginScreen = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const [login, { isLoading }] = useLoginMutation();
+
+  const { userInfo } = useSelector((state) => state.auth);
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const submitHandler = (e) => {
+  const { search } = useLocation();
+  const sp = new URLSearchParams(search);
+  const redirect = sp.get('redirect') || '/';
+
+  useEffect(() => {
+    if (userInfo) {
+      navigate(redirect);
+    }
+  }, [userInfo, navigate, redirect]);
+
+  const submitHandler = async (e) => {
     e.preventDefault();
-    console.log('submit');
+    try {
+      const res = await login({ email, password }).unwrap();
+      dispatch(setCredentials({ ...res }));
+      navigate(redirect);
+    } catch (error) {
+      toast.error(error?.data?.message || error?.error);
+    }
   };
 
   return (
@@ -36,14 +62,20 @@ const LoginScreen = () => {
             onChange={(e) => setPassword(e.target.value)}
           ></Form.Control>
         </Form.Group>
-        <Button type='submit' variant='primary' className='mt-2'>
+        <Button
+          disabled={isLoading}
+          type='submit'
+          variant='primary'
+          className='mt-2'
+        >
           Sign In
         </Button>
+        {isLoading && <Loader />}
       </Form>
       <Row className='py-3'>
         <Col>
           Not registered?{' '}
-          <Link to='/register'>
+          <Link to={redirect ? `/register?redirect=${redirect}` : '/register'}>
             <strong>Register</strong>
           </Link>
         </Col>

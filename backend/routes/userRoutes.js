@@ -16,7 +16,7 @@ import {
 } from '../controllers/userController.js';
 
 router.route('/').post(registerUser).get(protect, admin, getAllUsers);
-router.post('/login', authUser);
+router.post('/auth', authUser);
 router.post('/logout', logoutUser);
 router
   .route('/profile')
