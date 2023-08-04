@@ -23,7 +23,6 @@ const LoginScreen = () => {
   const sp = new URLSearchParams(search);
   const redirect = sp.get('redirect') || '/';
   // const redirect = sp.get('redirect') === '' ? null : sp.get('redirect');
-  console.log(redirect);
 
   useEffect(() => {
     if (userInfo) {

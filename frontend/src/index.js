@@ -17,7 +17,12 @@ import {
   LoginScreen,
   ProductScreen,
   CartScreen,
+  ShippingScreen,
+  PaymentScreen,
+  PlaceOrderScreen,
 } from './screens';
+
+import { PrivateRoute } from './components';
 
 import './assets/styles/bootstrap.custom.css';
 import './assets/styles/index.css';
@@ -32,6 +37,12 @@ const router = createBrowserRouter(
       <Route path='/login' element={<LoginScreen />} />
       <Route path='/product/:id' element={<ProductScreen />} />
       <Route path='/cart' element={<CartScreen />} />
+
+      <Route path='' element={<PrivateRoute />}>
+        <Route path='/shipping' element={<ShippingScreen />} />
+        <Route path='/payment' element={<PaymentScreen />} />
+        <Route path='/placeorder' element={<PlaceOrderScreen />} />
+      </Route>
     </Route>
   )
 );
