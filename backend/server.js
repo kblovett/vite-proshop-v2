@@ -8,6 +8,7 @@ import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 
 import userRoutes from './routes/userRoutes.js';
 import productRoutes from './routes/productRoutes.js';
+import orderRoutes from './routes/orderRoutes.js';
 
 const port = process.env.PORT || 5000;
 
@@ -22,12 +23,15 @@ app.use(express.urlencoded({ extended: true }));
 // Cookie parser middleware
 app.use(cookieParser());
 
+// Default route
 app.get('/', (req, res) => {
-  res.send('Dimec API is running...');
+  res.send('ProShop v2 API is running...');
 });
 
+// Routes
 app.use('/api/users', userRoutes);
 app.use('/api/products', productRoutes);
+app.use('/api/orders', orderRoutes);
 
 // Error handler middleware
 app.use(notFound);
