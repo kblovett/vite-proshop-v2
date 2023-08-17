@@ -22,7 +22,10 @@ const CheckoutSteps = ({ step1, step2, step3, step4 }) => {
         {step2 ? (
           <LinkContainer
             isActive={() => window.location.pathname === '/shipping'}
-            activeStyle={{ textDecoration: 'underline' }}
+            activeStyle={{
+              textDecoration: 'underline',
+              textUnderlineOffset: 5,
+            }}
             to='/shipping'
           >
             <Nav.Link>Shipping</Nav.Link>
@@ -35,7 +38,10 @@ const CheckoutSteps = ({ step1, step2, step3, step4 }) => {
         {step3 ? (
           <LinkContainer
             isActive={() => window.location.pathname === '/payment'}
-            activeStyle={{ textDecoration: 'underline' }}
+            activeStyle={{
+              textDecoration: 'underline',
+              textUnderlineOffset: 5,
+            }}
             to='/payment'
           >
             <Nav.Link>Payment</Nav.Link>
@@ -48,7 +54,10 @@ const CheckoutSteps = ({ step1, step2, step3, step4 }) => {
         {step4 ? (
           <LinkContainer
             isActive={() => window.location.pathname === '/placeorder'}
-            activeStyle={{ textDecoration: 'underline' }}
+            activeStyle={{
+              textDecoration: 'underline',
+              textUnderlineOffset: 5,
+            }}
             to='/placeorder'
           >
             <Nav.Link>Place Order</Nav.Link>

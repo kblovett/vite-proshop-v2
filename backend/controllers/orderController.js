@@ -87,7 +87,8 @@ const getAllOrders = asyncHandler(async (req, res) => {
 // @route   GET /api/orders/user/:id
 // @access  Private/Admin
 const getAllOrdersForUser = asyncHandler(async (req, res) => {
-  res.send('Get all orders for a user');
+  const orders = await Order.find({ user: req.params.id });
+  res.status(200).json(orders);
 });
 
 export {
