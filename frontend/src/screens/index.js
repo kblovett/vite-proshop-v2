@@ -6,3 +6,4 @@ export * from './CartScreen';
 export * from './ShippingScreen';
 export * from './PaymentScreen';
 export * from './PlaceOrderScreen';
+export * from './OrderScreen';

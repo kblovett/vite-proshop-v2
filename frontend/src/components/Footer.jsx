@@ -8,7 +8,9 @@ const Footer = () => {
     <footer>
       <Container>
         <Row>
-          <Col className='text-center py-3'>&copy; {currentYear} Dimec</Col>
+          <Col className='text-center py-3'>
+            &copy; {currentYear} ProShop v2
+          </Col>
         </Row>
       </Container>
     </footer>
