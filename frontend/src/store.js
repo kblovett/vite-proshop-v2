@@ -1,6 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 
 import { apiSlice, authSlice, cartSlice } from './slices';
+import { NODE_ENV } from './constants';
 
 const store = configureStore({
   reducer: {
@@ -10,7 +11,7 @@ const store = configureStore({
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(apiSlice.middleware),
-  devTools: process.env.NODE_ENV !== 'production',
+  devTools: NODE_ENV !== 'production',
 });
 
 export default store;

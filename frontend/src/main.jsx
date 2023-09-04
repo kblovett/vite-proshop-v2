@@ -28,8 +28,6 @@ import { PrivateRoute } from './components';
 import './assets/styles/bootstrap.custom.css';
 import './assets/styles/index.css';
 
-import reportWebVitals from './reportWebVitals';
-
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App />}>
@@ -57,5 +55,3 @@ root.render(
     </Provider>
   </React.StrictMode>
 );
-
-reportWebVitals();
