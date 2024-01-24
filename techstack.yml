@@ -1,0 +1,484 @@
+repo_name: kblovett/vite-proshop-v2
+report_id: c8ce8eb9177dfa51612ad8982d2c542a
+version: 0.1
+repo_type: Public
+timestamp: '2024-01-24T00:17:54+00:00'
+requested_by: kblovett
+provider: github
+branch: main
+detected_tools_count: 34
+tools:
+- name: CSS 3
+  description: The latest evolution of the Cascading Style Sheets language
+  website_url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2
+  detection_source: Repo Metadata
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2
+  detection_source: Repo Metadata
+- name: Bootstrap
+  description: Simple and flexible HTML, CSS, and JS for popular UI components and
+    interactions
+  website_url: http://getbootstrap.com/
+  version: 5.3.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Front-End Frameworks
+  image_url: https://img.stackshare.io/service/1101/C9QJ7V3X.png
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2/blob/main/frontend/package-lock.json
+  detection_source: frontend/package.json
+  last_updated_by: Kolin Lovett
+  last_updated_on: 2023-07-27 23:30:18.000000000 Z
+- name: ExpressJS
+  description: Sinatra inspired web development framework for node.js -- insanely
+    fast, flexible, and simple
+  website_url: http://expressjs.com/
+  version: 4.18.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Microframeworks (Backend)
+  image_url: https://img.stackshare.io/service/1163/hashtag.png
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Kolin Lovett
+  last_updated_on: 2023-07-29 22:03:04.000000000 Z
+- name: React
+  description: A JavaScript library for building user interfaces
+  website_url: https://reactjs.org/
+  version: 18.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript UI Libraries
+  image_url: https://img.stackshare.io/service/1020/OYIaJ1KK.png
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2/blob/main/frontend/package-lock.json
+  detection_source: frontend/package.json
+  last_updated_by: Kolin Lovett
+  last_updated_on: 2023-09-04 05:00:37.000000000 Z
+- name: React Router
+  description: A complete routing solution for React.js
+  website_url: https://github.com/rackt/react-router
+  version: 6.15.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: JavaScript Framework Components
+  image_url: https://img.stackshare.io/service/3350/8261421.png
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2/blob/main/frontend/package-lock.json
+  detection_source: frontend/package.json
+  last_updated_by: Kolin Lovett
+  last_updated_on: 2023-09-04 05:00:37.000000000 Z
+- name: Redux
+  description: Predictable state container for JavaScript apps
+  website_url: https://redux.js.org/
+  version: 4.2.1
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: State Management Library
+  image_url: https://img.stackshare.io/service/4074/13142323.png
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2/blob/main/frontend/package-lock.json
+  detection_source: frontend/package.json
+  last_updated_by: Kolin Lovett
+  last_updated_on: 2023-09-04 05:00:37.000000000 Z
+- name: Mongoose
+  description: MongoDB object modeling designed to work in an asynchronous environment
+  website_url: http://mongoosejs.com/
+  version: 7.5.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Object Document Mapper (ODM)
+  image_url: https://img.stackshare.io/service/1231/0TXzZU7W_400x400.jpg
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Kolin Lovett
+  last_updated_on: 2023-07-29 22:03:04.000000000 Z
+- name: Dotenv
+  description: Loads environment variables from .env for Nodejs projects
+  website_url: https://github.com/motdotla/dotenv
+  license: BSD-2-Clause
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Server Configuration and Automation
+  image_url: https://img.stackshare.io/service/8067/default_90dcb1286af7685c68df319c764b80704df1155b.png
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: Kolin Lovett
+  last_updated_on: 2023-07-28 00:48:27.000000000 Z
+- name: ESLint
+  description: The fully pluggable JavaScript code quality tool
+  website_url: http://eslint.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2/blob/main/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Kolin Lovett
+  last_updated_on: 2023-07-26 18:56:01.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2
+  detection_source: Repo Metadata
+- name: Vite
+  description: Native-ESM powered web dev build tool
+  website_url: https://vitejs.dev/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: JS Build Tools / JS Task Runners
+  image_url: https://img.stackshare.io/service/21547/default_1aeac791cde11ff66cc0b20dcc6144eeb185c905.png
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2/blob/main/frontend/package.json
+  detection_source: frontend/package.json
+  last_updated_by: Kolin Lovett
+  last_updated_on: 2023-07-26 18:56:01.000000000 Z
+- name: nodemon
+  description: A simple monitor script for use during development of a node.js app
+  website_url: http://nodemon.io/
+  version: 3.0.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Monitoring
+  sub_category: node.js Application Monitoring
+  image_url: https://img.stackshare.io/service/5577/preview.png
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Kolin Lovett
+  last_updated_on: 2023-07-29 22:03:04.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2/blob/main/package.json
+  detection_source: package.json
+  last_updated_by: Kolin Lovett
+  last_updated_on: 2023-07-28 00:48:27.000000000 Z
+- name: axios
+  description: Promise based HTTP client for the browser and node.js
+  website_url: https://github.com/mzabriskie/axios
+  version: 1.5.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/no-img-open-source.png
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2/blob/main/frontend/package-lock.json
+  detection_source: frontend/package.json
+  last_updated_by: Kolin Lovett
+  last_updated_on: 2023-09-04 05:00:37.000000000 Z
+- name: "@types/react"
+  description: TypeScript definitions for React
+  package_url: https://www.npmjs.com/@types/react
+  version: 18.2.21
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15894/default_1d65e37e65b7f80761374f0202776043277d505d.png
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2/blob/main/frontend/package-lock.json
+  detection_source: frontend/package.json
+  last_updated_by: Kolin Lovett
+  last_updated_on: 2023-09-04 05:00:37.000000000 Z
+- name: "@types/react-dom"
+  description: TypeScript definitions for React
+  package_url: https://www.npmjs.com/@types/react-dom
+  version: 18.2.7
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15946/default_54b691c123fc8979741e800e4dcd3936c0f3b246.png
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2/blob/main/frontend/package-lock.json
+  detection_source: frontend/package.json
+  last_updated_by: Kolin Lovett
+  last_updated_on: 2023-09-04 05:00:37.000000000 Z
+- name: "@types/react-redux"
+  description: TypeScript definitions for react-redux
+  package_url: https://www.npmjs.com/@types/react-redux
+  version: 7.1.26
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16687/default_6dad4e42e12d47cc6edfbdea036dae12f91abebb.png
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2/blob/main/frontend/package-lock.json
+  detection_source: frontend/package.json
+  last_updated_by: Kolin Lovett
+  last_updated_on: 2023-09-04 05:00:37.000000000 Z
+- name: "@types/react-router-dom"
+  description: TypeScript definitions for React Router
+  package_url: https://www.npmjs.com/@types/react-router-dom
+  version: 5.3.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16557/default_d522554c6a41cb28d922d6d3ad32ad4afa0e3bb5.png
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2/blob/main/frontend/package-lock.json
+  detection_source: frontend/package.json
+  last_updated_by: Kolin Lovett
+  last_updated_on: 2023-09-04 05:00:37.000000000 Z
+- name: bcryptjs
+  description: Optimized bcrypt in plain JavaScript with zero dependencies
+  package_url: https://www.npmjs.com/bcryptjs
+  version: 2.4.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16857/default_627f05e6a07ce29fc9f119417270f38e8aa5c5e2.png
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Kolin Lovett
+  last_updated_on: 2023-07-29 22:03:04.000000000 Z
+- name: colors
+  description: Get colors in your node.js console
+  package_url: https://www.npmjs.com/colors
+  version: 1.4.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15908/default_7c39a83d4acd952df89b1ebfdb94c8646324fbf1.png
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Kolin Lovett
+  last_updated_on: 2023-07-29 22:03:04.000000000 Z
+- name: concurrently
+  description: Run commands concurrently
+  package_url: https://www.npmjs.com/concurrently
+  version: 8.2.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16041/default_5fd43aeff4d6a935abc13737de01a0355210499d.png
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Kolin Lovett
+  last_updated_on: 2023-07-29 22:03:04.000000000 Z
+- name: cookie-parser
+  description: Parse HTTP request cookies
+  package_url: https://www.npmjs.com/cookie-parser
+  version: 1.4.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16136/default_def3edb85d7fbd20200a5cd7d0a1679e31bc8b3d.png
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Kolin Lovett
+  last_updated_on: 2023-07-31 16:56:39.000000000 Z
+- name: eslint-plugin-react
+  description: React specific linting rules for ESLint
+  package_url: https://www.npmjs.com/eslint-plugin-react
+  version: 7.33.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15817/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2/blob/main/frontend/package-lock.json
+  detection_source: frontend/package.json
+  last_updated_by: Kolin Lovett
+  last_updated_on: 2023-09-04 05:00:37.000000000 Z
+- name: eslint-plugin-react-hooks
+  description: ESLint rules for React Hooks
+  package_url: https://www.npmjs.com/eslint-plugin-react-hooks
+  version: 4.6.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16149/default_1f3a2fc7d882e29a43394ecdf491b8989ea3f0fa.png
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2/blob/main/frontend/package-lock.json
+  detection_source: frontend/package.json
+  last_updated_by: Kolin Lovett
+  last_updated_on: 2023-09-04 05:00:37.000000000 Z
+- name: express
+  description: Fast, unopinionated, minimalist web framework
+  package_url: https://www.npmjs.com/express
+  version: 4.18.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15818/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Kolin Lovett
+  last_updated_on: 2023-07-29 22:03:04.000000000 Z
+- name: jsonwebtoken
+  description: JSON Web Token implementation
+  package_url: https://www.npmjs.com/jsonwebtoken
+  version: 9.0.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16155/default_77b54a203c743d16eddb6b6390cba17218454fa0.png
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Kolin Lovett
+  last_updated_on: 2023-07-31 05:03:18.000000000 Z
+- name: react-bootstrap
+  description: Bootstrap 3 components built with React
+  package_url: https://www.npmjs.com/react-bootstrap
+  version: 2.8.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16383/default_92302d1bbf4c0f67b862869662b4f69002c94aad.png
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2/blob/main/frontend/package-lock.json
+  detection_source: frontend/package.json
+  last_updated_by: Kolin Lovett
+  last_updated_on: 2023-09-04 05:00:37.000000000 Z
+- name: react-dom
+  description: React package for working with the DOM
+  package_url: https://www.npmjs.com/react-dom
+  version: 18.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15808/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2/blob/main/frontend/package-lock.json
+  detection_source: frontend/package.json
+  last_updated_by: Kolin Lovett
+  last_updated_on: 2023-09-04 05:00:37.000000000 Z
+- name: react-icons
+  description: SVG React icons of popular icon packs using ES6 imports
+  package_url: https://www.npmjs.com/react-icons
+  version: 4.10.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16909/default_7b9968788548874538c601457e8dcd9c74bd2051.png
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2/blob/main/frontend/package-lock.json
+  detection_source: frontend/package.json
+  last_updated_by: Kolin Lovett
+  last_updated_on: 2023-09-04 05:00:37.000000000 Z
+- name: react-redux
+  description: Official React bindings for Redux
+  package_url: https://www.npmjs.com/react-redux
+  version: 8.1.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15984/default_f49d4c116f8ea0155f4d92673b084378bba02760.png
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2/blob/main/frontend/package-lock.json
+  detection_source: frontend/package.json
+  last_updated_by: Kolin Lovett
+  last_updated_on: 2023-09-04 05:00:37.000000000 Z
+- name: react-router-dom
+  description: DOM bindings for React Router
+  package_url: https://www.npmjs.com/react-router-dom
+  version: 6.15.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16025/default_e25d1fbb04a118c79fb444294461417342bd03bf.png
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2/blob/main/frontend/package-lock.json
+  detection_source: frontend/package.json
+  last_updated_by: Kolin Lovett
+  last_updated_on: 2023-09-04 05:00:37.000000000 Z
+- name: react-toastify
+  description: React notification made easy
+  package_url: https://www.npmjs.com/react-toastify
+  version: 9.1.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18461/default_5ff724c0ff89bb42698aa80ef3403008cb0d8f72.png
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2/blob/main/frontend/package-lock.json
+  detection_source: frontend/package.json
+  last_updated_by: Kolin Lovett
+  last_updated_on: 2023-09-04 05:00:37.000000000 Z
+- name: vite
+  description: Native-ESM powered web dev build tool
+  package_url: https://www.npmjs.com/vite
+  version: 4.4.9
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/npm/image.png
+  detection_source_url: https://github.com/kblovett/vite-proshop-v2/blob/main/frontend/package-lock.json
+  detection_source: frontend/package.json
+  last_updated_by: Kolin Lovett
+  last_updated_on: 2023-09-04 05:00:37.000000000 Z
+  vulnerabilities:
+  - name: Vite dev server option `server.fs.deny` can be bypassed when hosted on case-insensitive
+      filesystem
+    cve_id: CVE-2024-23331
+    cve_url: https://github.com/advisories/GHSA-c24v-8rfc-w8vw
+    detected_date: Jan 20
+    severity: high
+    first_patched: 4.5.2
+  - name: Vite XSS vulnerability in `server.transformIndexHtml` via URL payload
+    cve_id: CVE-2023-49293
+    cve_url: https://github.com/advisories/GHSA-92r3-m2mg-pj97
+    detected_date: Dec 6
+    severity: moderate
+    first_patched: 4.4.12
